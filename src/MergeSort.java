@@ -4,6 +4,17 @@ public class MergeSort
 {
    public void merge(int arr[], int left, int mid, int right)
     {
+        /*
+         TODO - these two names 'one' and 'two' are not very
+                expressive.  The name 'one' doesn't convey the
+                intended use of the value that it stores.
+
+         TODO - these two names actually become quite confusing when
+                used in the expressions on lines 30, 42, and 48.  If a
+                variable is named 'one', I might expect to be storing
+                the value 1.  Same for 'two'.
+         */
+
         int one = mid - left + 1;
         int two = right - mid;
   
@@ -43,6 +54,12 @@ public class MergeSort
         }
     }
 
+    /**
+     * TODO - This method looks really good.  It's very simply stated.
+     *          There is not one thing in this method that does not need to be there,
+     *          and the names of the variables and the helper method that it calls
+     *          make it very expressive.  Good work!
+     */
   public void sort(int arr[], int left, int right)
     {
         if (left < right) {
@@ -73,7 +90,7 @@ public class MergeSort
     		arr[i] = r.nextInt(50);
     		//System.out.print(arr[i] + " ");
     			}
-      MergeSort testList = new MergeSort();
+      MergeSort testList = new MergeSort(); // TODO - name this mergeSort
         testList.sort(arr, 0, arr.length - 1);
       
     	testList.printArray(arr);
